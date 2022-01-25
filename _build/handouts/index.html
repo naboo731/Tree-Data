@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Tree Data Exploration | Devmountain Foundations</title>
+
+      <link
+        href="_static/pygments.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="_static/devmountain.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+          <link rel="stylesheet" type="text/css" href="_static/devmountain.css" />
+          <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+          <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+
+      <script src="_static/pdfobject.min.js"></script>
+      
+  </head>
+  <body>
+      <div id="handouts-container">
+        <header id="page-header">
+            <p id="project-title">Devmountain Foundations</p>
+            <p id="page-title">Tree Data Exploration</p>
+              <p id="backlink">
+                <a href="/"> &laquo; Back to Homepage </a>
+              </p>
+        </header>
+
+        <nav id="page-toc"><ul>
+<li><a class="reference internal" href="#">Tree Data Exploration</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#step-1-explore">Step 1: Explore</a></li>
+<li><a class="reference internal" href="#step-2-visualize">Step 2: Visualize</a></li>
+<li><a class="reference internal" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+        <main id="page-content">
+            <section class="section" id="tree-data-exploration">
+<h1>Tree Data Exploration</h1>
+<section class="section" id="introduction">
+<h2>Introduction</h2>
+<p>In this exercise you will get familiar with Jupyter notebook and matplotlib.</p>
+</section>
+<section class="section" id="setup">
+<h2>Setup</h2>
+<p><strong>First, download the CSV file of the Tree Dataset here:</strong></p>
+<p><a class="reference external" href="https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq" target="_blank">https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq</a></p>
+<p>Make sure to move the file to the directory where you will be working for this exercise.</p>
+<p><strong>Next, create a virtual environment and install matplotlib, numpy, and jupyter notebook.</strong></p>
+<pre class="console literal-block">$ <span class="cmd">virtualenv env</span>
+$ <span class="cmd">source env/bin/activate</span>
+$ (env) <span class="cmd">pip3 install notebook</span>
+$ (env) <span class="cmd">pip3 install matplotlib</span>
+$ (env) <span class="cmd">pip3 install numpy</span>
+$ (env) <span class="cmd">pip3 install pandas</span></pre>
+<p><strong>Now, start your Jupyter notebook server.</strong></p>
+<pre class="console literal-block">$ (env) <span class="cmd">jupyter notebook</span></pre>
+<p>This should open your browser to your jupyter notebook tree, but if it does not, open this link: <a class="reference external" href="http://localhost:8888/tree" target="_blank">http://localhost:8888/tree</a>.</p>
+<p><strong>Lastly, create a new Jupyter Notebook by clicking the dropdown on the upper right that says “New” and then select “Python 3 (pykernal)”.</strong></p>
+</section>
+<section class="section" id="step-1-explore">
+<h2>Step 1: Explore</h2>
+<p>Conduct a series of exploratory operations on this Tree Dataset using pandas.
+Write a narrative explanation of how you are exploring the data as you do it using
+the <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> functionality of Jupyter notebook.</p>
+<p>Things to explore:</p>
+<ul class="simple">
+<li><p>How many unique zipcodes are represented</p></li>
+<li><p>How many total trees are there</p></li>
+<li><p>What are the various formats for dimensions</p></li>
+<li><p>What are the different Site information options</p></li>
+<li><p>Which is more popular for the caretaker– Private or Department of Public Works?</p></li>
+<li><p>What missing data is there in this dataset? Which columns are impacted? How many
+rows in each column?</p></li>
+</ul>
+</section>
+<section class="section" id="step-2-visualize">
+<h2>Step 2: Visualize</h2>
+<p>Using matplotlib and Jupyter notebook, create the following visualizations.</p>
+<ol class="arabic simple">
+<li><p>Create a histogram of the number of trees in each zipcode.</p></li>
+<li><p>Create a histogram of the number of trees cared for by “Private” vs. “DPW”.</p></li>
+</ol>
+</section>
+<section class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p><strong>When you are finished, push your .ipynb file to your Github to turn in this exercise.</strong>
+As a note, we don’t recommend adding the Tree CSV to Github as it is a very large file.</p>
+</section>
+</section>
+
+        </main>
+
+        <footer id="page-footer">
+            <p>&copy; 2021 Devmountain</p>
+        </footer>
+      </div>
+
+      <script src="_static/main.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+  </body>
+</html>
